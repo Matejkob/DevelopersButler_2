@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45D2F79B28885DC900ED81E4 /* DevelopersButlerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D2F79A28885DC900ED81E4 /* DevelopersButlerApp.swift */; };
-		45D2F79D28885DC900ED81E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D2F79C28885DC900ED81E4 /* ContentView.swift */; };
+		45D2F79B28885DC900ED81E4 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D2F79A28885DC900ED81E4 /* App.swift */; };
 		45D2F79F28885DCA00ED81E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D2F79E28885DCA00ED81E4 /* Assets.xcassets */; };
 		45D2F7A228885DCA00ED81E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D2F7A128885DCA00ED81E4 /* Preview Assets.xcassets */; };
 		45D2F7AD28885DCA00ED81E4 /* DevelopersButlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D2F7AC28885DCA00ED81E4 /* DevelopersButlerTests.swift */; };
 		45D2F7B728885DCA00ED81E4 /* DevelopersButlerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D2F7B628885DCA00ED81E4 /* DevelopersButlerUITests.swift */; };
 		45D2F7B928885DCA00ED81E4 /* DevelopersButlerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D2F7B828885DCA00ED81E4 /* DevelopersButlerUITestsLaunchTests.swift */; };
+		45D2F7C62888668E00ED81E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D2F7C52888668E00ED81E4 /* AppDelegate.swift */; };
+		45D2F7C92888674B00ED81E4 /* RootViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D2F7C82888674B00ED81E4 /* RootViewConfigurator.swift */; };
+		45D2F7CB2888691600ED81E4 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D2F7CA2888691600ED81E4 /* MainMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +37,7 @@
 
 /* Begin PBXFileReference section */
 		45D2F79728885DC900ED81E4 /* DevelopersButler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevelopersButler.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		45D2F79A28885DC900ED81E4 /* DevelopersButlerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersButlerApp.swift; sourceTree = "<group>"; };
-		45D2F79C28885DC900ED81E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		45D2F79A28885DC900ED81E4 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		45D2F79E28885DCA00ED81E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45D2F7A128885DCA00ED81E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		45D2F7A328885DCA00ED81E4 /* DevelopersButler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DevelopersButler.entitlements; sourceTree = "<group>"; };
@@ -45,6 +46,10 @@
 		45D2F7B228885DCA00ED81E4 /* DevelopersButlerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevelopersButlerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D2F7B628885DCA00ED81E4 /* DevelopersButlerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersButlerUITests.swift; sourceTree = "<group>"; };
 		45D2F7B828885DCA00ED81E4 /* DevelopersButlerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersButlerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		45D2F7C52888668E00ED81E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45D2F7C7288866FE00ED81E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		45D2F7C82888674B00ED81E4 /* RootViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewConfigurator.swift; sourceTree = "<group>"; };
+		45D2F7CA2888691600ED81E4 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +100,13 @@
 		45D2F79928885DC900ED81E4 /* DevelopersButler */ = {
 			isa = PBXGroup;
 			children = (
-				45D2F79A28885DC900ED81E4 /* DevelopersButlerApp.swift */,
-				45D2F79C28885DC900ED81E4 /* ContentView.swift */,
-				45D2F79E28885DCA00ED81E4 /* Assets.xcassets */,
+				45D2F7C7288866FE00ED81E4 /* Info.plist */,
 				45D2F7A328885DCA00ED81E4 /* DevelopersButler.entitlements */,
+				45D2F79A28885DC900ED81E4 /* App.swift */,
+				45D2F7C82888674B00ED81E4 /* RootViewConfigurator.swift */,
+				45D2F7CA2888691600ED81E4 /* MainMenu.swift */,
+				45D2F7C52888668E00ED81E4 /* AppDelegate.swift */,
+				45D2F79E28885DCA00ED81E4 /* Assets.xcassets */,
 				45D2F7A028885DCA00ED81E4 /* Preview Content */,
 			);
 			path = DevelopersButler;
@@ -259,8 +267,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45D2F79D28885DC900ED81E4 /* ContentView.swift in Sources */,
-				45D2F79B28885DC900ED81E4 /* DevelopersButlerApp.swift in Sources */,
+				45D2F7C62888668E00ED81E4 /* AppDelegate.swift in Sources */,
+				45D2F7C92888674B00ED81E4 /* RootViewConfigurator.swift in Sources */,
+				45D2F79B28885DC900ED81E4 /* App.swift in Sources */,
+				45D2F7CB2888691600ED81E4 /* MainMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +434,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DevelopersButler/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,6 +462,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DevelopersButler/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
